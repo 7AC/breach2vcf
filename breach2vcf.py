@@ -76,9 +76,10 @@ def find_datafiles(dirpath):
 def main():
    parser = argparse.ArgumentParser()
    parser.add_argument('vcf', metavar='VCF FILE', nargs=1)
+   parser.add_argument('--data-dir', default='data')
    parser.add_argument('--output-dir', default='logs')
    args = parser.parse_args()
-   datafiles = find_datafiles('data')
+   datafiles = find_datafiles(args.data_dir)
    emails = parse_contacts(args.vcf[0], datafiles, args.output_dir)
    for initials in sorted(datafiles):
       matching_emails = emails.get(initials)
