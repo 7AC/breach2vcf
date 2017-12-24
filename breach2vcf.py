@@ -3,7 +3,11 @@
 import argparse
 import os
 import sys
-import vobject
+try:
+   import vobject
+except ImportError:
+   sys.stderr.write('Please install vobject with pip or pip2 (pip2 install vobject)\n')
+   sys.exit(1)
 
 
 class Email(object):
