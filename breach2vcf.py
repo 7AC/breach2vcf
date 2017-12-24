@@ -79,7 +79,7 @@ def find_datafiles(dirpath):
 
 def main():
    parser = argparse.ArgumentParser()
-   parser.add_argument('vcf', metavar='VCF FILE', nargs=1)
+   parser.add_argument('vcf', metavar='VCF_FILE', nargs=1)
    parser.add_argument('--data-dir', default='data')
    parser.add_argument('--output-dir', default='logs')
    args = parser.parse_args()

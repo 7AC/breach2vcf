@@ -6,7 +6,7 @@ Parse data from the [recent password breach](https://medium.com/4iqdelvedeep/1-4
 usage: breach2vcf.py [-h] [--output-dir OUTPUT_DIR] VCF FILE
 
 positional arguments:
-  VCF FILE
+  VCF_FILE
 
 optional arguments:
   -h, --help            show this help message and exit
